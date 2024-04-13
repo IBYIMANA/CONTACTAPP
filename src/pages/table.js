@@ -39,11 +39,11 @@ export const Table = () => {
                                 <td>{contact.fullName}</td>
                                 <td><img src="{contact.profile} " alt="" /></td>
                                 <td className='space-x-2'>
-                                    <button className='px-2 py-1 mt-4 font-bold text-black bg-lime-500'>
+                                    <button className='px-2 py-1 mt-4 font-bold text-black rounded-lg bg-lime-500'>
                                         <Link to={`/details/${contact._id}`}>details</Link>
                                     </button>
                                     
-                                    <button className='px-2 py-1 mt-4 font-bold text-white bg-black'>
+                                    <button className='px-2 py-1 mt-4 font-bold text-white bg-black rounded-lg'>
                                         delete
                                     </button>
                                 </td>
