@@ -15,7 +15,6 @@ export const Table = () => {
         });
     }
 
-  
     useEffect(() => {
         fetchContact();
     }, []);
@@ -23,7 +22,7 @@ export const Table = () => {
   
     return (
         <div className='flex flex-col items-center'>
-            <button className='px-2 py-1 mt-4 mb-4 font-bold text-black bg-lime-500' ><Link to="/home">Add New</Link></button>
+            <button className='px-2 py-1 mt-4 mb-4 font-bold text-black rounded-lg bg-lime-500' ><Link to="/home">Add New</Link></button>
             <table>
                 <thead>
                     <tr>
@@ -43,9 +42,6 @@ export const Table = () => {
                                         <Link to={`/details/${contact._id}`}>details</Link>
                                     </button>
                                     
-                                    {/* <button className='px-2 py-1 mt-4 font-bold text-white bg-black rounded-lg'>
-                                        delete
-                                    </button> */}
                                 </td>
                             </tr>
                         }) : "No contacts found!"
