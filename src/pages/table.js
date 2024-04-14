@@ -43,9 +43,9 @@ export const Table = () => {
                                         <Link to={`/details/${contact._id}`}>details</Link>
                                     </button>
                                     
-                                    <button className='px-2 py-1 mt-4 font-bold text-white bg-black rounded-lg'>
+                                    {/* <button className='px-2 py-1 mt-4 font-bold text-white bg-black rounded-lg'>
                                         delete
-                                    </button>
+                                    </button> */}
                                 </td>
                             </tr>
                         }) : "No contacts found!"

@@ -39,7 +39,7 @@ export const More = (props) => {
     <div>
       <div className='flex flex-row justify-around mt-8'>
         <div>
-          <h1 className='text-xl font-bold'>Marie Louise</h1>
+          <h1 className='font-bold text-center text-black'>Person information</h1>
           <p>Full names: {contact ? contact.fullName : "Not available"}</p>
           <p>E-mail: {contact ? contact.email : "Not available"}</p>
           <p>Phone: {contact ? contact.phone : "Not available"}</p>
