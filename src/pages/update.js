@@ -94,7 +94,6 @@ export default function Update() {
               className="p-3 border border-black rounded-lg"
             />
           </div>
-          
           <button type="submit" className="px-4 py-3 mt-5 text-base text-black rounded-lg bg-lime-600">Update</button>
           {message && <p className="p-5 text-green-900 bg-green-200 rounded-lg">{message}</p>}
           {error && <p className="p-5 text-red-900 bg-red-200 rounded-lg">{error}</p>}
