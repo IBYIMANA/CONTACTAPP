@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { useParams } from 'react-router-dom';
+import { useNavigate,useParams } from 'react-router-dom';
 
-export const More = (props) => {
+
+export const Details = (props) => {
+  const navigate = useNavigate();
   const [contact, setContact] = useState()
-
   let { contactId } = useParams();
 
   const fetchContact = (id) => {
@@ -39,18 +40,20 @@ export const More = (props) => {
     <div>
       <div className='flex flex-row justify-around mt-8'>
         <div>
-          <h1 className='font-bold text-center text-black'>Person information</h1>
+          <h1 className='text-xl font-bold'>PERSON INFORMATION</h1>
           <p>Full names: {contact ? contact.fullName : "Not available"}</p>
           <p>E-mail: {contact ? contact.email : "Not available"}</p>
           <p>Phone: {contact ? contact.phone : "Not available"}</p>
           <p>Created on : {contact ? contact.createdAt : "Not available"}</p>
           <p>Created on : {contact ? contact.updatedAt : "Not available"}</p>
         </div>
-        <div className='flex float-right gap-6 mt-4 space-x-4 sm:mt-0 sm:flex-row sm:items-center'>
-        <button onClick={() => (`/update/${contact._id}`)} className= "block px-5 py-3 text-sm font-medium text-black transition rounded-lg bg-lime-400 hover:bg-gray-200 focus:outline-none focus:ring">Update</button>
-          <button className='block px-5 py-3 text-sm font-medium text-black transition rounded-lg bg-lime-400 hover:bg-gray-200 focus:outline-none focus:ring'  onClick={() => deleteContact(contact._id)}>Delete</button>
+        <div className='space-x-4 '>
+        <button onClick={() => navigate(`/update/${contact._id}`)} className="px-6 py-3 text-base text-white transition duration-300 rounded-lg bg-lime-500">Update</button>
+          <button className='px-6 py-3 text-white rounded-lg bg-lime-500'  onClick={() => deleteContact(contact._id)}>Delete</button>
         </div>
       </div>
     </div>
   )
 }
+
+export default Details;

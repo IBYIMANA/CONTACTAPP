@@ -22,13 +22,12 @@ export const Table = () => {
   
     return (
         <div className='flex flex-col items-center'>
-            <button className='px-2 py-1 mt-4 mb-4 font-bold text-black rounded-lg bg-lime-500' ><Link to="/home">Add New</Link></button>
-            <table>
+            <button className='px-6 py-3 mb-4 font-bold text-black rounded-lg mt-34 bg-lime-500' ><Link to="/home">Add New Contact</Link></button>
+            <table className=''>
                 <thead>
                     <tr>
-                        <th>Full Name</th>
+                        <th>Names</th>
                        
-                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>

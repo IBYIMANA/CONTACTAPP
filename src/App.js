@@ -1,15 +1,13 @@
 
-
 import './App.css';
 import { Header } from './components/header';
 import { Home } from './pages/home';
-
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import { Table } from './pages/table';
 import { Footer } from './components/footer';
-import { More } from './pages/more';
-
+import  Update from './pages/Update';
+import Details from './pages/Details';
 
 function App() {
   return (
@@ -20,7 +18,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Table />}></Route>
           <Route path="/home" element={<Home />}></Route>
-          <Route path="/details/:contactId" element={<More />}></Route>
+          <Route path="/Details/:contactId" element={<Details />}></Route>
+          <Route path="/update/:contactId" element={<Update />}></Route>
          
         </Routes>
       </BrowserRouter>
@@ -28,10 +27,6 @@ function App() {
      
       <Footer/>
     </div>
-
-
-
-
   );
 }
 

@@ -31,7 +31,7 @@ export const Home = () => {
   return (
     <div className='flex flex-col items-center justify-center'>
       <form>
-        <h1 className='mt-8 mb-4 font-bold text-1xl'>Add New</h1>
+        <h1 className='mt-8 mb-4 font-bold text-1xl'>Add New Contact</h1>
         <label>Full name</label><br></br>
         <input type="text" placeholder='Enter your names' className='h-12 pl-2 border-2 w-96'
           onChange={e => setFullName(e.target.value)}></input><br></br>
@@ -44,7 +44,7 @@ export const Home = () => {
         <label>Phone</label><br></br>
         <input type="text" placeholder='Enter your Phone number' className='h-12 pl-2 border-2 w-96'
           onChange={e => setPhone(e.target.value)}></input><br></br>
-        <button className='h-12 mt-4 text-black border-2 w-96 bg-lime-500' onClick={addContact}>Create</button>
+        <button className='h-12 mt-4 text-black border-2 w-96 bg-lime-500' onClick={addContact}>Create new contact</button>
       </form>
 
     </div>
