@@ -22,7 +22,7 @@ export const Table = () => {
   
     return (
         <div className='flex flex-col items-center'>
-            <button className='px-6 py-3 mb-4 font-bold text-black rounded-lg mt-34 bg-lime-500' ><Link to="/home">Add New Contact</Link></button>
+            <button className='px-6 py-3 mb-4 font-bold text-black bg-blue-300 rounded-lg mt-34 hover:bg-lime-300' ><Link to="/home">Add New Contact</Link></button>
             <table >
                 <thead>
                     <tr>
