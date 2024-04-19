@@ -23,10 +23,10 @@ export const Table = () => {
     return (
         <div className='flex flex-col items-center'>
             <button className='px-6 py-3 mb-4 font-bold text-black rounded-lg mt-34 bg-lime-500' ><Link to="/home">Add New Contact</Link></button>
-            <table className=''>
+            <table >
                 <thead>
                     <tr>
-                        <th>Names</th>
+                        <th className='text-2xl text-blue-400 hover:text-red-400'>Names</th>
                        
                     </tr>
                 </thead>
@@ -34,7 +34,7 @@ export const Table = () => {
                     {
                         (contacts !== null) ? contacts.map((contact, index) => {
                             return <tr key={index}>
-                                <td>{contact.fullName}</td>
+                                <td className='text-xl font-extrabold text-black'>{contact.fullName}</td>
                                 <td><img src="{contact.profile} " alt="" /></td>
                                 <td className='space-x-2'>
                                     <button className='px-2 py-1 mt-4 font-bold text-black rounded-lg bg-lime-500'>

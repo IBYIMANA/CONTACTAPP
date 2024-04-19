@@ -32,7 +32,7 @@ export const Home = () => {
     <div className='flex flex-col items-center justify-center'>
       <form>
         <h1 className='mt-8 mb-4 font-bold text-1xl'>Add New Contact</h1>
-        <label>Full name</label><br></br>
+        <label >Full name</label><br></br>
         <input type="text" placeholder='Enter your names' className='h-12 pl-2 border-2 w-96'
           onChange={e => setFullName(e.target.value)}></input><br></br>
 
